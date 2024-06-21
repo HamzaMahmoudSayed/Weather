@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo@2x.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Weather</title>
+</head>
+
+<body>
+
+
+    <nav class="py-3 navbar navbar-expand-lg">
+        <div class="container">
+            <a class="d-flex navbar-brand text-white" href="index.html">
+                <img src="images/logo@2x.png" alt="Logo" width="64" height="38"
+                    class="d-inline-block align-text-top me-2">
+                <h1 class="fw-bold position-relative top-50 mb-1">Weather<br><small>tagline goes here</small>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse mt-2 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="nav-link active rounded-pill fw-bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white fw-bold" href="#">News</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white fw-bold" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white fw-bold" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white fw-bold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="form d-flex position-relative">
+                <input id="inputSearch" type="text" class="rounded-pill p-3 w-100" placeholder="Find your location...">
+                <button class="btn rounded-pill text-white" id="btnSearch">Find</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="forecast-table position-relative">
+        <div class=" container">
+            <div class="row">
+                <div class="px-0 mb-3 col-lg-4">
+                    <div class="forecast-today rounded-start-3">
+                        <div class="forecast-header fw-bold d-flex justify-content-between rounded-start-3 py-2 px-2">
+                            <span class="day" id="today"></span>
+                            <span class="date" id="date"></span>
+                        </div>
+                        <div class="forecast-content px-3 pt-4 pb-2">
+                            <span class="location" id="textCity"></span>
+                            <h3 class="degree text-white mt-2" id="todayDegree"></h3>
+                            <img id="iconCondition" width="90" alt="">
+                            <span class="custom" id="textCondition"></span>
+                            <ul class="fa-ul d-flex mt-4">
+                                <li class="me-5"><span class="fa-li"><img src="images/icon-umberella.png"
+                                            alt=""></span>20%
+                                </li>
+                                <li class="me-5"><span class="fa-li"><img src="images/icon-wind.png"
+                                            alt=""></span>18Km/h
+                                </li>
+                                <li><span class="fa-li"><img src="images/icon-compass.png" alt=""></span>East</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 mb-3 col-lg-4">
+                    <div class="forecast">
+                        <div class="forecast-header fw-bold d-flex justify-content-between py-2 px-2">
+                            <span class="day text-center" id="tomorrow"></span>
+                        </div>
+                        <div class="forecast-content">
+                            <img id="iconConditionTomorrow" class="mt-5" width="48" alt="">
+                            <h3 class="degree text-white mt-4 text-center" id="tomorrowDegreeDay"></h3>
+                            <h6 class="text-center mb-2 fw-lighter" id="tomorrowDegreeNight"></h6>
+                            <span class="custom" id="textConditionTomorrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 col-lg-4">
+                    <div class="forecast-2 forecast-today rounded-end-3">
+                        <div class="forecast-header fw-bold d-flex justify-content-between rounded-end-3 py-2 px-2">
+                            <span class="day position-relative start-50 translate-middle-x" id="nextTomorrow"></span>
+                        </div>
+                        <div class="forecast-content">
+                            <img id="iconConditionNextTomorrow" class="mt-5" width="48" alt="">
+                            <h3 class="degree text-white mt-4 text-center" id="nextTomorrowDegreeDay"></h3>
+                            <h6 class="text-center mb-2 fw-lighter" id="nextTomorrowDegreeNight"></h6>
+                            <span class="custom" id="textConditionNextTomorrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 pt-5 pb-3">
+        <div class="container">
+
+            <div class="social d-flex mb-5 position-relative">
+                <input type="text" class="rounded-pill p-3" placeholder="Enter your email to subscribe...">
+                <button class="btn rounded-pill text-white">Subscribe</button>
+                <ul class="d-flex justify-content-center ms-5 pt-2">
+                    <li><i class="fa-brands fa-facebook-f fs-5"></i></li>
+                    <li><i class="fa-brands fa-twitter  fs-5"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g fs-5"></i></li>
+                    <li><i class="fa-brands fa-pinterest fs-5"></i></li>
+                </ul>
+            </div>
+
+            <div class="copyRight mt-1">
+                <p class="text-center text-white">Copy Right 2024 © By <span class="fw-bold">Hamza</span> All Rights
+                    Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e202b;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+nav {
+    background-color: rgb(30, 32, 43);
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.fa-bars-staggered {
+    color: #009ad8;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h1 small {
+    font-weight: 300;
+    font-size: 10px;
+    color: RGB(191, 193, 200);
+}
+
+.active {
+    border: 2px solid #009ad8 !important;
+    color: #009ad8 !important;
+    padding: 5px 25px 5px 25px !important;
+}
+
+ul .text-white {
+    border: 2px solid transparent !important;
+    border-radius: 50rem;
+    padding-inline: 25px !important;
+    transition: 0.4s;
+}
+
+ul .text-white:hover {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+    border-radius: 50rem;
+}
+
+ul .text-white:hover li {
+    padding-right: 0 !important;
+}
+
+.hero {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 350px;
+}
+
+.form input {
+    background: #1e202b;
+    color: white !important;
+    border: 1px solid #1e202b;
+}
+
+.form button {
+    background-color: rgb(0, 154, 216);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px
+}
+
+.form button:hover {
+    background-color: rgb(0, 154, 216);
+}
+
+.forecast-table {
+    bottom: 140px;
+}
+
+.forecast-table .forecast-today {
+    background-color: rgb(50, 53, 68);
+    height: 401px;
+}
+
+.forecast-table .forecast-today .forecast-header {
+    background-color: rgb(45, 48, 61);
+}
+
+.forecast-table .forecast-today .forecast-header span,
+.forecast-table .forecast .forecast-header span {
+    color: RGB(191, 193, 200);
+}
+
+.forecast-table .forecast-today .forecast-content .location {
+    color: RGB(191, 193, 200);
+    font-size: 18px;
+}
+
+.forecast-table .forecast-today .forecast-content h3 {
+    font-size: 90px;
+}
+
+.forecast-table .forecast-today .forecast-content .custom {
+    color: rgb(0, 154, 216);
+    display: block;
+}
+
+.forecast-table .forecast-today .forecast-content ul li {
+    color: RGB(191, 193, 200);
+}
+
+.forecast-table .forecast {
+    background-color: rgb(38, 41, 54);
+    height: 401px;
+}
+
+.forecast-table .forecast .forecast-header {
+    background-color: rgb(34, 37, 48);
+}
+
+.forecast-table .forecast .forecast-header span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forecast-table .forecast .forecast-content h6 {
+    color: RGB(191, 193, 200);
+}
+
+.forecast-table .forecast .forecast-content {
+    color: #009ad8;
+    text-align: center;
+}
+
+.forecast-table .forecast-2 .forecast-header {
+    background-color: rgb(45, 48, 61);
+}
+
+.forecast-table .forecast-2 .forecast-header span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forecast-table .forecast-2 .forecast-content h3 {
+    font-size: 24px;
+}
+
+.forecast-table .forecast-2 .forecast-content h6 {
+    color: RGB(191, 193, 200);
+}
+
+.forecast-table .forecast-2 .forecast-content {
+    color: #009ad8;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(38, 41, 54);
+}
+
+footer .social input {
+    background: #1e202b;
+    color: white !important;
+    border: 1px solid #1e202b;
+    width: 65%;
+}
+
+footer .social button {
+    background-color: rgb(0, 154, 216);
+    position: absolute;
+    top: 5px;
+    right: 395px;
+    bottom: 5px;
+    padding: 10px 20px
+}
+
+footer .social button:hover {
+    background-color: rgb(0, 154, 216);
+}
+
+footer .social ul li .fa-facebook-f {
+    background-color: #1e202b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(0, 154, 216);
+    transition: 0.3s;
+}
+
+footer .social ul li {
+    width: 40px;
+    margin-left: 5px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(0, 154, 216);
+    background-color: #1e202b;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .social ul li:hover {
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+
+footer .social ul li .fa-facebook-f:hover {
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+
+footer .social ul .fa-pinterest,
+.fa-google-plus-g,
+.fa-twitter {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyRight p span {
+    color: #009ad8;
+}

@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e202b;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.fa-bars-staggered {
+    color: #009ad8;
+}
+
+
+:focus-visible {
+    outline: none;
+}
+
+nav {
+    background-color: rgb(30, 32, 43);
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h1 small {
+    font-weight: 300;
+    font-size: 10px;
+    color: RGB(191, 193, 200);
+}
+
+.active {
+    border: 2px solid #009ad8 !important;
+    color: #009ad8 !important;
+    padding: 5px 25px 5px 25px !important;
+}
+
+ul .text-white {
+    border: 2px solid transparent !important;
+    border-radius: 50rem;
+    padding-inline: 25px !important;
+    transition: 0.4s;
+}
+
+ul .text-white:hover {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+    border-radius: 50rem;
+}
+
+ul .text-white:hover li {
+    padding-right: 0 !important;
+}
+
+.breadcrumb {
+    background-color: rgb(38, 41, 54);
+}
+
+
+.breadcrumb .breadcrumb-item a {
+    color: RGB(191, 193, 200);
+    font-size: 14px;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .breadcrumb-item {
+    color: RGB(255, 255, 255);
+    font-size: 13px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color:
+        RGB(191, 193, 200) !important;
+}
+
+.contact .content .map {
+    background-color: rgb(38, 41, 54);
+    height: 220px;
+}
+
+.contact .content .contact-info {
+    background-color: rgb(38, 41, 54);
+}
+
+.contact .content .contact-info address p,
+.contact .content .contact-info a p {
+    color: RGB(191, 193, 200);
+    font-size: 14px;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+}
+
+.contact .content p {
+    color: RGB(191, 193, 200);
+    font-size: 14px;
+}
+
+.contact .content input,
+.contact .content textarea {
+    background-color: transparent;
+    border: 2px solid #393c48;
+    padding-inline: 15px;
+    padding-block: 10px;
+    font-size: 14px;
+}
+
+.contact .content input:hover {
+    border-color: #009ad8;
+}
+
+.contact .content input:focus {
+    border-color: #009ad8;
+}
+
+.contact .content textarea {
+    min-height: 150px;
+    color: white;
+}
+
+.contact .content textarea:hover {
+    border-color: #009ad8;
+}
+
+.contact .content textarea:focus {
+    border-color: #009ad8;
+}
+
+.contact .content button {
+    background-color: rgb(0, 154, 216);
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.contact .content button:hover {
+    background-color: rgb(0, 154, 216);
+}
+
+footer {
+    background-color: rgb(38, 41, 54);
+    margin-top: 70px;
+}
+
+footer .social input {
+    background: #1e202b;
+    color: white !important;
+    border: 1px solid #1e202b;
+    width: 65%;
+}
+
+footer .social button {
+    background-color: rgb(0, 154, 216);
+    position: absolute;
+    top: 5px;
+    right: 395px;
+    bottom: 5px;
+    padding: 10px 20px
+}
+
+footer .social button:hover {
+    background-color: rgb(0, 154, 216);
+}
+
+footer .social ul li .fa-facebook-f {
+    background-color: #1e202b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(0, 154, 216);
+    transition: 0.3s;
+}
+
+footer .social ul li {
+    width: 40px;
+    margin-left: 5px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(0, 154, 216);
+    background-color: #1e202b;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .social ul li:hover {
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+
+footer .social ul li .fa-facebook-f:hover {
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+
+footer .social ul .fa-pinterest,
+.fa-google-plus-g,
+.fa-twitter {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyRight p span {
+    color: #009ad8;
+}
